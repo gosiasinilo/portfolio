@@ -1,0 +1,46 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors" as *;
+
+@mixin header-style($color: white, $align: center) {
+  font-family: "Julius Sans One", sans-serif;
+  color: $color;
+  text-align: $align;
+  font-size: 5rem;
+}
+
+@mixin body-font($weight: 400, $color: white, $align: left, $size: 1rem) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $weight;
+  color: $color;
+  text-align: $align;
+  font-size: $size;
+}
+
+@mixin button($text-color: white, $bg-color: $brand-light-orange) {
+  @include body-font(400, $text-color, center, 1.5rem);
+  color: $text-color;
+  margin-top: 30px;
+  padding: 10px 50px 10px 50px;
+  background-color: $bg-color;
+  border: 2px solid white;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brand-pink;
+  }
+}
+
+@mixin flex-box($direction: row, $justify: center) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin container {
+  padding: 2% 7%;
+  align-self: center;
+  margin: 2rem auto 0 auto;
+}

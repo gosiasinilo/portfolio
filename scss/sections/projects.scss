@@ -1,0 +1,53 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors" as *;
+@use "../partials/mixins" as *;
+
+.projects-section {
+  background-color: white;
+  @include container;
+
+  &__heading {
+    @include header-style($color: $brand-orange, $align: center);
+    margin: 2rem;
+  }
+  &__items {
+    @include flex-box(row, space-between);
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__card {
+    @include flex-box(column);
+    background-color: $brand-light-orange;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+      padding: 15px;
+    }
+
+    &__h3 {
+      @include body-font(600, white, center, 1.5em);
+      padding: 15px;
+    }
+
+    &__p {
+      @include body-font(200, $brand-black, center, 1em);
+      line-height: 2rem;
+    }
+    @include q.large-tablet {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+
+    @include q.tablet {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}

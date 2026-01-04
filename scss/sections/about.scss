@@ -1,0 +1,46 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors" as *;
+@use "../partials/mixins" as *;
+
+.about-section {
+  @include flex-box(row, space-between);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  color: $brand-black;
+  padding-top: 5em;
+
+  &__heading {
+    flex: 1 1 40%;
+    @include header-style($dark-purple, left);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  &__text {
+    @include body-font(100, $brand-black, justify, 1rem);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 600px;
+    padding: 20px;
+  }
+  &__button {
+    @include button(white, $brand-light-orange);
+    margin-top: 10px;
+    display: inline-block;
+  }
+  @include q.tablet {
+    flex-direction: column;
+    padding: 2em;
+  }
+}

@@ -1,0 +1,11 @@
+@use "./scss/partials/resets";
+@use "./scss/partials/colors";
+@use "./scss/partials/media-queries";
+@use "./scss/partials/mixins.scss";
+
+@use "./scss/sections/nav.scss";
+@use "./scss/sections/hero.scss";
+@use "./scss/sections/projects.scss";
+@use "./scss/sections/skills.scss";
+@use "./scss/sections/footer.scss";
+@use "./scss/sections/about.scss";

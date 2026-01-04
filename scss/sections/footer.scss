@@ -1,0 +1,22 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors.scss" as *;
+@use "../partials/mixins.scss" as *;
+
+.footer {
+  background-color: $brand-pink;
+  padding: 20px 7%;
+
+  &__text {
+    padding: 20px;
+    @include body-font(200, white, center, 1.2em);
+  }
+
+  @include q.tablet {
+    padding: 10px;
+
+    &__text {
+      padding: 10px;
+      @include body-font(200, white, center, 0.9em);
+    }
+  }
+}

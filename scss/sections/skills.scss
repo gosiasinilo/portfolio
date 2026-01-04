@@ -1,0 +1,50 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors" as *;
+@use "../partials/mixins" as *;
+
+.skills-section {
+  @include container;
+  padding-top: 10em;
+  background-color: $dark-purple;
+  color: white;
+
+  &__block {
+    @include flex-box;
+    padding: 2rem 0;
+    gap: 20px;
+  }
+
+  &__heading {
+    @include header-style(white, center);
+    padding-top: 1rem;
+  }
+  &__subheading {
+    @include header-style(white, center);
+    padding-top: 1rem;
+    font-size: 1em;
+  }
+
+  &__card {
+    @include flex-box(column, space-between);
+    border: 3px solid white;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    padding: 2rem;
+    position: relative;
+    min-width: 0;
+
+    &__text {
+      @include flex-box(column, flex-end);
+      @include body-font(200, white, center, 1em);
+      line-height: 1.7;
+      position: relative;
+      padding: 0px 35px 0px 35px;
+    }
+
+    @include q.tablet {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}

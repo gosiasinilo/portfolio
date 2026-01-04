@@ -1,0 +1,50 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors.scss" as *;
+@use "../partials/mixins.scss" as *;
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  @include flex-box(column, center);
+  text-align: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__text {
+    z-index: 1;
+    padding: 50px;
+    border: 1px solid white;
+  }
+
+  &__heading {
+    @include header-style(white, center);
+    letter-spacing: 20px;
+  }
+
+  &__sub-heading {
+    @include body-font(100, white, 2.5em);
+    font-size: 1.5em;
+  }
+  @include q.tablet {
+    padding: 20px;
+
+    &__text {
+      padding: 20px;
+    }
+
+    &__heading {
+      font-size: 2rem;
+      letter-spacing: 8px;
+    }
+
+    &__sub-heading {
+      font-size: 1rem;
+    }
+  }
+}

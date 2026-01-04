@@ -1,0 +1,76 @@
+@use "../partials/media-queries" as q;
+@use "../partials/colors" as *;
+@use "../partials/mixins" as *;
+
+.navbar {
+  @include flex-box(row, space-between);
+  @include container;
+  margin: 0;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+
+  &__home {
+    color: $dark-purple;
+    transform: scaleX(-1);
+    text-transform: uppercase;
+    z-index: 300;
+  }
+
+  &__links {
+    @include body-font(600, 1.5em, $brand-orange);
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    position: static;
+    z-index: 300;
+
+    li {
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    a {
+      color: $brand-orange;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: white;
+      gap: 0.5em;
+      z-index: 1000;
+      padding-top: 3em;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $brand-black;
+  }
+
+  @include q.tablet {
+    &__hamburger {
+      display: block;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+}

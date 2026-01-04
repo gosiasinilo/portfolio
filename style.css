@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 7%;
+  align-self: center;
+  margin: 2rem auto 0 auto;
+  margin: 0;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+.navbar__home {
+  color: #611f3f;
+  transform: scaleX(-1);
+  text-transform: uppercase;
+  z-index: 300;
+}
+.navbar__links {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: 1.5em;
+  text-align: #8b5c04;
+  font-size: 1rem;
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  position: static;
+  z-index: 300;
+}
+.navbar__links li {
+  padding: 0.5rem;
+  text-align: center;
+}
+.navbar__links a {
+  color: #8b5c04;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar__links.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  gap: 0.5em;
+  z-index: 1000;
+  padding-top: 3em;
+}
+.navbar__hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #404040;
+}
+@media screen and (max-width: 577px) {
+  .navbar__hamburger {
+    display: block;
+  }
+  .navbar__links {
+    display: none;
+  }
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-section__text {
+  z-index: 1;
+  padding: 50px;
+  border: 1px solid white;
+}
+.hero-section__heading {
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 20px;
+}
+.hero-section__sub-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-align: 2.5em;
+  font-size: 1rem;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 577px) {
+  .hero-section {
+    padding: 20px;
+  }
+  .hero-section__text {
+    padding: 20px;
+  }
+  .hero-section__heading {
+    font-size: 2rem;
+    letter-spacing: 8px;
+  }
+  .hero-section__sub-heading {
+    font-size: 1rem;
+  }
+}
+
+.projects-section {
+  background-color: white;
+  padding: 2% 7%;
+  align-self: center;
+  margin: 2rem auto 0 auto;
+}
+.projects-section__heading {
+  font-family: "Julius Sans One", sans-serif;
+  color: #8b5c04;
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem;
+}
+.projects-section__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.projects-section__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d49751;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.projects-section__card__img {
+  width: 100%;
+  object-fit: cover;
+  padding: 15px;
+}
+.projects-section__card__h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px;
+}
+.projects-section__card__p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: #404040;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .projects-section__card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 577px) {
+  .projects-section__card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.skills-section {
+  padding: 2% 7%;
+  align-self: center;
+  margin: 2rem auto 0 auto;
+  padding-top: 10em;
+  background-color: #611f3f;
+  color: white;
+}
+.skills-section__block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 20px;
+}
+.skills-section__heading {
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 1rem;
+}
+.skills-section__subheading {
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 1rem;
+  font-size: 1em;
+}
+.skills-section__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid white;
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
+  min-width: 0;
+}
+.skills-section__card__text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.7;
+  position: relative;
+  padding: 0px 35px 0px 35px;
+}
+@media screen and (max-width: 577px) {
+  .skills-section__card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.footer {
+  background-color: #b36363;
+  padding: 20px 7%;
+}
+.footer__text {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 577px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer__text {
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  color: #404040;
+  padding-top: 5em;
+}
+.about-section__heading {
+  flex: 1 1 40%;
+  font-family: "Julius Sans One", sans-serif;
+  color: #611f3f;
+  text-align: left;
+  font-size: 5rem;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section__content {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+}
+.about-section__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: #404040;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+  padding: 20px;
+}
+.about-section__button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 30px;
+  padding: 10px 50px 10px 50px;
+  background-color: #d49751;
+  border: 2px solid white;
+  width: fit-content;
+  cursor: pointer;
+}
+.about-section__button:hover {
+  background-color: #b36363;
+}
+.about-section__button {
+  margin-top: 10px;
+  display: inline-block;
+}
+@media screen and (max-width: 577px) {
+  .about-section {
+    flex-direction: column;
+    padding: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
