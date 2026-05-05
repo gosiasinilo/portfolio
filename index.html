@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Gosia Sinilo</title>
+    <title>Gosia Sinilo — Developer</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="../portfolio/script.js" defer></script>
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -21,119 +20,182 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="index.html" class="navbar__home"
-        ><i class="fa-solid fa-house fa-2x"></i
-      ></a>
-      <button
-        class="navbar__hamburger"
-        aria-label="Toggle nav bar"
-        aria-expanded="false"
-      >
-        &#9776;
+    <nav class="nav">
+      <a href="#hero" class="nav__logo"><i class="fa-solid fa-house"></i></a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-
-      <ul class="navbar__links">
-        <li class="navbar__item">
-          <a href="#about" class="navbar__link">ABOUT</a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </li>
-        <li class="navbar__item">
-          <a href="#skills" class="navbar__link">SKILLS</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#projects" class="navbar__link">PROJECTS</a>
+        <li>
+          <a href="https://github.com/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </li>
       </ul>
     </nav>
 
-    <section id="hero" class="hero-section">
-      <div class="hero-section__text">
-        <h1 class="hero-section__heading">PORTFOLIO</h1>
-        <br />
-        <h2 class="hero-section__sub-heading">Gosia Sinilo</h2>
+    <section id="hero" class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Full Stack Developer</p>
+        <h1 class="hero__name">Gosia Sinilo</h1>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline">Download CV</a>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="about-section">
-      <h1 class="about-section__heading">BIO</h1>
-      <div class="about-section__content">
-        <p class="about-section__text">
-          Hello! I'm Gosia Sinilo. I hold a Master's degree in Mathematics and
-          Computer Science from Nicolaus Copernicus University in Poland and has
-          completed diplomas in Marketing and Finance since moving to Australia
-          in 2010. After building a diverse career across construction, design,
-          hospitality, and business management — including running her own
-          sustainable leatherwork brand — she is now pursuing a career change
-          into technology. Passionate about continuous learning, Gosia is
-          currently studying part-time Cybersecurity at Melbourne Polytechnic
-          (to be completed in 2027), strengthening her technical foundation to
-          complement her strong problem-solving and people skills while
-          transitioning into tech.
-        </p>
-        <a href="https://github.com/gosiasinilo" target="_blank">
-          <button class="about-section__button">Github</button></a
-        >
-      </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-      <h1 class="skills-section__heading">Skills</h1>
-      <h2 class="skills-section__subheading">Adding more and more ...</h2>
-      <div class="skills-section__block">
-        <div class="skills-section__card">
-          <div class="skills-section__card__text">
-            <p>HTML with SASS</p>
-          </div>
-        </div>
-
-        <div class="skills-section__card">
-          <div class="skills-section__card__text">
-            <p>JAVA SCRIPT</p>
-          </div>
-        </div>
-        <div class="skills-section__card">
-          <div class="skills-section__card__text">
-            <p>Python</p>
-          </div>
-        </div>
-
-        <div class="skills-section__card">
-          <div class="skills-section__card__text">
-            <p>Graphic design</p>
+    <section id="about" class="about">
+      <div class="section-inner">
+        <p class="section-label">About</p>
+        <div class="about__content">
+          <p class="about__text">
+            Hi! I'm a Junior Full Stack Developer with a Master's in Mathematics and Computer Science, having recently completed the _nology Pathway to Tech program in February 2026.
+          </p>
+          <p class="about__text">
+            I combine full stack development with a background in graphic design to build practical, intuitive, and user-focused applications. I have been working as a graphic designer since finishing my Master's, though I have never worked in the IT industry — which is exactly the career change I am now pursuing. My diverse career across construction, hospitality, and operations has sharpened my problem-solving, communication, and organisational skills — all of which I bring into collaborative tech projects.
+          </p>
+          <p class="about__text">
+            Passionate about usability, performance, and continuous improvement, I am currently deepening my knowledge in cybersecurity and AI.
+          </p>
+          <div class="about__links">
+            <a href="https://github.com/gosiasinilo" target="_blank" class="btn btn--outline">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="btn btn--outline">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline">
+              <i class="fa-solid fa-file-arrow-down"></i> CV
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects-section">
-      <h1 class="projects-section__heading">Projects</h1>
-      <div class="projects-section__items">
-        <div class="projects-section__card">
-          <img
-            src="./assets/images/CoffeCorner.png"
-            alt="Coffe Corner website"
-            class="projects-section__card__img"
-          />
-          <h3 class="projects-section__card__h3">Coffe Corner website</h3>
+    <section id="skills" class="skills">
+      <div class="section-inner">
+        <p class="section-label">Skills</p>
+        <div class="skills__grid">
+          <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML &amp; SASS</div>
+          <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+          <div class="skill-pill"><i class="fa-brands fa-react"></i> React &amp; TypeScript</div>
+          <div class="skill-pill"><i class="fa-brands fa-java"></i> Java &amp; Spring Boot</div>
+          <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="skill-pill"><i class="fa-brands fa-aws"></i> AWS &amp; Cloud</div>
+          <div class="skill-pill"><i class="fa-solid fa-database"></i> MySQL</div>
+          <div class="skill-pill"><i class="fa-solid fa-fire"></i> Firebase</div>
+          <div class="skill-pill"><i class="fa-solid fa-arrow-right-arrow-left"></i> REST API</div>
+          <div class="skill-pill"><i class="fa-solid fa-flask"></i> Jest &amp; Unit Testing</div>
+          <div class="skill-pill"><i class="fa-solid fa-flask"></i> Integration Testing</div>
+          <div class="skill-pill"><i class="fa-solid fa-vial"></i> Playwright (learning)</div>
+          <div class="skill-pill"><i class="fa-solid fa-paper-plane"></i> Postman</div>
+          <div class="skill-pill"><i class="fa-solid fa-book-open"></i> Swagger</div>
+          <div class="skill-pill"><i class="fa-solid fa-pen-ruler"></i> Graphic Design</div>
         </div>
+      </div>
+    </section>
 
-        <div class="projects-section__card">
-          <img
-            src="./assets/images/enter.gif"
-            alt="Hangman game"
-            class="projects-section__card__img"
-          />
-          <h3 class="projects-section__card__h3">Hangman game</h3>
-        </div>
+    <section id="projects" class="projects">
+      <div class="section-inner">
+        <p class="section-label">Projects</p>
+        <p class="projects__intro">Each project here reflects a step in my learning journey — from vanilla JavaScript to full-stack cloud-deployed applications. I have a few more in progress.</p>
+        <div class="projects__grid">
 
-        <div class="projects-section__card">
-          <h3 class="projects-section__card__h3">and more and more</h3>
+          <div class="project-card project-card--featured">
+            <div class="project-card__tag">Featured</div>
+            <h3 class="project-card__title">Resourcing App</h3>
+            <p class="project-card__desc">Full-stack workforce management app for tracking jobs and temps. Features AI-powered temp recommendations, real-time status tracking, and a full job lifecycle from initiation to completion.</p>
+            <div class="project-card__tech">
+              <span>React</span><span>TypeScript</span><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>AWS</span>
+            </div>
+            <a href="https://resources.gosiasinilo.com" target="_blank" class="btn btn--primary">View Live</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-card__title">E-Commerce Store</h3>
+            <p class="project-card__desc">Online shop with product browsing, cart management, and favourites. Built with React and Firebase.</p>
+            <div class="project-card__tech">
+              <span>React</span><span>Firebase</span><span>SCSS</span>
+            </div>
+            <a href="https://gosia-ecommerce.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-card__title">Google Books Search</h3>
+            <p class="project-card__desc">Search and explore books using the Google Books API with a clean, responsive interface.</p>
+            <div class="project-card__tech">
+              <span>React</span><span>Google Books API</span>
+            </div>
+            <a href="https://gosia-googlebooks.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-card__title">Morse Code Translator</h3>
+            <p class="project-card__desc">Detects whether input is text or Morse code and translates between the two. Built with vanilla JavaScript.</p>
+            <div class="project-card__tech">
+              <span>JavaScript</span>
+            </div>
+            <a href="https://gosia-morsecode.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-card__title">Hangman Game</h3>
+            <p class="project-card__desc">Classic word guessing game. Words loaded from a JSON file, with multiple categories.</p>
+            <div class="project-card__tech">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <a href="https://gosia-hangman.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-inner">
+        <p class="section-label">Contact</p>
+        <form class="contact__form" netlify name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="contact__row">
+            <div class="contact__field">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="contact__field">
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="contact__field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary contact__submit">Send message</button>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__text">Thank you for visiting!</div>
+      <p>© 2026 Gosia Sinilo</p>
+      <div class="footer__links">
+        <a href="https://github.com/gosiasinilo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
     </footer>
   </body>
 </html>
