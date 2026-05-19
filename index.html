@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gosia Sinilo — Developer</title>
+    <title>Gosia Sinilo — Developer &amp; Designer</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&family=Monoton&family=Oswald:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,181 +20,347 @@
   </head>
 
   <body>
+    <div class="hero-top">
+      <img src="assets/images/hero1.png" alt="" class="hero-top__img" aria-hidden="true">
+    </div>
+
     <nav class="nav">
-      <a href="#hero" class="nav__logo"><i class="fa-solid fa-house"></i></a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__inner">
+      <div class="nav__social">
+        <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
       <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/gosiasinilo" target="_blank" class="nav__link nav__link--icon">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
       </ul>
+      <button
+        class="nav__hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu">
+        <ul class="nav__links nav__links--mobile">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      </div>
     </nav>
 
     <section id="hero" class="hero">
-      <div class="hero__bg"></div>
       <div class="hero__content">
-        <p class="hero__eyebrow">Full Stack Developer</p>
         <h1 class="hero__name">Gosia Sinilo</h1>
+        <p class="hero__eyebrow">Full Stack Developer &amp; Designer</p>
         <div class="hero__cta">
           <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline">Download CV</a>
+          <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline"
+            >Download CV</a
+          >
         </div>
       </div>
     </section>
 
     <section id="about" class="about">
       <div class="section-inner">
-        <p class="section-label">About</p>
-        <div class="about__content">
-          <p class="about__text">
-            Hi! I'm a Junior Full Stack Developer with a Master's in Mathematics and Computer Science, having recently completed the _nology Pathway to Tech program in February 2026.
-          </p>
-          <p class="about__text">
-            I combine full stack development with a background in graphic design to build practical, intuitive, and user-focused applications. I have been working as a graphic designer since finishing my Master's, though I have never worked in the IT industry — which is exactly the career change I am now pursuing. My diverse career across construction, hospitality, and operations has sharpened my problem-solving, communication, and organisational skills — all of which I bring into collaborative tech projects.
-          </p>
-          <p class="about__text">
-            Passionate about usability, performance, and continuous improvement, I am currently deepening my knowledge in cybersecurity and AI.
-          </p>
-          <div class="about__links">
-            <a href="https://github.com/gosiasinilo" target="_blank" class="btn btn--outline">
-              <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="btn btn--outline">
-              <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline">
-              <i class="fa-solid fa-file-arrow-down"></i> CV
-            </a>
+        <div class="about__layout">
+          <div class="about__title-col">
+            <div class="deco-title-wrap">
+              <h2 class="deco-title deco-title--outline deco-title--mauve" aria-label="about me">about<br>me</h2>
+              <h2 class="deco-title deco-title--fill deco-title--mauve" aria-hidden="true">about<br>me</h2>
+            </div>
+          </div>
+          <div class="about__content">
+            <p class="about__text">
+              I'm a Full Stack Developer with 25+ years of professional experience
+              across graphic design, branding, business ownership, and operations —
+              and a Master's in Mathematics &amp; Computer Science.
+            </p>
+            <p class="about__text">
+              After decades of making things look right, I trained to make them
+              work right too. I completed the _nology Full Stack Engineer program
+              in early 2026, and I now build practical, user-focused applications
+              that are both technically solid and visually considered.
+            </p>
+            <p class="about__text">
+              I bridge design and development — and years of client work, business
+              ownership, and team management mean I bring strong communication and
+              collaboration to every project.
+            </p>
+            <p class="about__text">
+              Currently deepening my knowledge in cybersecurity and AI. Based in
+              Melbourne, open to remote work worldwide.
+            </p>
+            <div class="about__links">
+              <a href="https://github.com/gosiasinilo" target="_blank" class="btn btn--outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank" class="btn btn--outline">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="assets/GosiaSinilo-CV.pdf" download class="btn btn--outline">
+                <i class="fa-solid fa-file-arrow-down"></i> CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="carousel">
+      <div class="carousel__track-wrap">
+        <div class="carousel__track">
+          <img src="assets/images/design work.png" alt="Design work" class="carousel__img">
+          <img src="assets/images/23915670_168353647090609_8694398525357691943_n 2.jpg" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_5283.JPG" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_20220106_185846.jpg" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_20220801_064755.jpg" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_20200602_164938.jpg" alt="Design work" class="carousel__img">
+          <img src="assets/images/3768B3BB-7244-4EDC-B58E-82CC7D7E5489.PNG" alt="Design work" class="carousel__img">
+          <img src="assets/images/82020EB6-F51B-4499-BEF8-F9AFEAA16E21.JPG" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_6853.JPG" alt="Design work" class="carousel__img">
+          <img src="assets/images/IMG_20220106_185942.jpg" alt="Design work" class="carousel__img">
+          <img src="assets/images/9369915A-4356-4C90-B625-B747E75FDFDD.JPG" alt="Design work" class="carousel__img">
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Previous">&#8592;</button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Next">&#8594;</button>
+      </div>
+    </section>
+
     <section id="skills" class="skills">
       <div class="section-inner">
-        <p class="section-label">Skills</p>
-        <div class="skills__grid">
-          <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML &amp; SASS</div>
-          <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
-          <div class="skill-pill"><i class="fa-brands fa-react"></i> React &amp; TypeScript</div>
-          <div class="skill-pill"><i class="fa-brands fa-java"></i> Java &amp; Spring Boot</div>
-          <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
-          <div class="skill-pill"><i class="fa-brands fa-aws"></i> AWS &amp; Cloud</div>
-          <div class="skill-pill"><i class="fa-solid fa-database"></i> MySQL</div>
-          <div class="skill-pill"><i class="fa-solid fa-fire"></i> Firebase</div>
-          <div class="skill-pill"><i class="fa-solid fa-arrow-right-arrow-left"></i> REST API</div>
-          <div class="skill-pill"><i class="fa-solid fa-flask"></i> Jest &amp; Unit Testing</div>
-          <div class="skill-pill"><i class="fa-solid fa-flask"></i> Integration Testing</div>
-          <div class="skill-pill"><i class="fa-solid fa-vial"></i> Playwright (learning)</div>
-          <div class="skill-pill"><i class="fa-solid fa-paper-plane"></i> Postman</div>
-          <div class="skill-pill"><i class="fa-solid fa-book-open"></i> Swagger</div>
-          <div class="skill-pill"><i class="fa-solid fa-pen-ruler"></i> Graphic Design</div>
+        <div class="skills__layout">
+          <div class="skills__grid skills__block">
+          <div class="skill-pill">
+            <i class="fa-brands fa-html5"></i> HTML &amp; SASS
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-js"></i> JavaScript
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-react"></i> React &amp; TypeScript
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-java"></i> Java &amp; Spring Boot
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-python"></i> Python
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-aws"></i> AWS &amp; Cloud
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-database"></i> MySQL
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-fire"></i> Firebase
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i> REST API
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-flask"></i> Jest &amp; Unit Testing
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-flask"></i> Integration Testing
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-vial"></i> Playwright (learning)
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-paper-plane"></i> Postman
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-book-open"></i> Swagger
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-pen-ruler"></i> Graphic Design
+          </div>
+          </div>
+          <div class="skills__header-col">
+            <div class="deco-title-wrap">
+              <h2 class="deco-title deco-title--outline deco-title--amber">skills</h2>
+              <h2 class="deco-title deco-title--fill deco-title--amber" aria-hidden="true">skills</h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects">
       <div class="section-inner">
-        <p class="section-label">Projects</p>
-        <p class="projects__intro">Each project here reflects a step in my learning journey — from vanilla JavaScript to full-stack cloud-deployed applications. I have a few more in progress.</p>
+        <div class="projects__top">
+          <div class="projects__left">
+            <div class="deco-title-wrap">
+              <h2 class="deco-title deco-title--outline deco-title--purple">projects</h2>
+              <h2 class="deco-title deco-title--fill deco-title--purple" aria-hidden="true">projects</h2>
+            </div>
+            <p class="projects__intro">
+              A selection of work spanning full-stack applications, UI projects, and
+              JavaScript fundamentals. A few more are in progress.
+            </p>
+          </div>
+          <div class="projects__right">
+            <div class="project-card project-card--featured">
+              <span class="project-card__number">01</span>
+              <h3 class="project-card__title">Resourcing App</h3>
+              <p class="project-card__desc">
+                A full-stack workforce management platform built to solve a real
+                operational problem — matching jobs to temporary workers
+                efficiently. Features AI-powered staff recommendations, real-time
+                job status tracking, and a complete job lifecycle from creation to
+                completion.
+              </p>
+              <div class="project-card__tech">
+                <span>React</span><span>TypeScript</span><span>Java</span
+                ><span>Spring Boot</span><span>MySQL</span><span>AWS</span>
+              </div>
+              <a href="https://resources.gosiasinilo.com" target="_blank" class="btn btn--primary">View Live</a>
+            </div>
+          </div>
+        </div>
         <div class="projects__grid">
 
-          <div class="project-card project-card--featured">
-            <div class="project-card__tag">Featured</div>
-            <h3 class="project-card__title">Resourcing App</h3>
-            <p class="project-card__desc">Full-stack workforce management app for tracking jobs and temps. Features AI-powered temp recommendations, real-time status tracking, and a full job lifecycle from initiation to completion.</p>
-            <div class="project-card__tech">
-              <span>React</span><span>TypeScript</span><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>AWS</span>
-            </div>
-            <a href="https://resources.gosiasinilo.com" target="_blank" class="btn btn--primary">View Live</a>
-          </div>
-
           <div class="project-card">
+            <span class="project-card__number">02</span>
             <h3 class="project-card__title">E-Commerce Store</h3>
-            <p class="project-card__desc">Online shop with product browsing, cart management, and favourites. Built with React and Firebase.</p>
+            <p class="project-card__desc">
+              A responsive online shop with product browsing, cart management,
+              and favourites — designed and built from scratch. Clean UI with
+              attention to user experience throughout.
+            </p>
             <div class="project-card__tech">
               <span>React</span><span>Firebase</span><span>SCSS</span>
             </div>
-            <a href="https://gosia-ecommerce.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+            <a
+              href="https://gosia-ecommerce.netlify.app"
+              target="_blank"
+              class="btn btn--outline"
+              >View Live</a
+            >
           </div>
 
           <div class="project-card">
+            <span class="project-card__number">03</span>
             <h3 class="project-card__title">Google Books Search</h3>
-            <p class="project-card__desc">Search and explore books using the Google Books API with a clean, responsive interface.</p>
+            <p class="project-card__desc">
+              A clean, fast book discovery app integrating the Google Books API.
+              Focused on intuitive search and a polished, readable interface.
+            </p>
             <div class="project-card__tech">
               <span>React</span><span>Google Books API</span>
             </div>
-            <a href="https://gosia-googlebooks.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+            <a
+              href="https://gosia-googlebooks.netlify.app"
+              target="_blank"
+              class="btn btn--outline"
+              >View Live</a
+            >
           </div>
 
           <div class="project-card">
+            <span class="project-card__number">04</span>
             <h3 class="project-card__title">Morse Code Translator</h3>
-            <p class="project-card__desc">Detects whether input is text or Morse code and translates between the two. Built with vanilla JavaScript.</p>
+            <p class="project-card__desc">
+              A bidirectional translator that automatically detects whether
+              input is text or Morse code and converts accordingly. Built with
+              vanilla JavaScript, unit tested for reliability.
+            </p>
             <div class="project-card__tech">
               <span>JavaScript</span>
             </div>
-            <a href="https://gosia-morsecode.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+            <a
+              href="https://gosia-morsecode.netlify.app"
+              target="_blank"
+              class="btn btn--outline"
+              >View Live</a
+            >
           </div>
 
           <div class="project-card">
+            <span class="project-card__number">05</span>
             <h3 class="project-card__title">Hangman Game</h3>
-            <p class="project-card__desc">Classic word guessing game. Words loaded from a JSON file, with multiple categories.</p>
+            <p class="project-card__desc">
+              A multi-category word guessing game with words loaded dynamically
+              from JSON. Simple, clean, and fun.
+            </p>
             <div class="project-card__tech">
               <span>JavaScript</span><span>HTML</span><span>CSS</span>
             </div>
-            <a href="https://gosia-hangman.netlify.app" target="_blank" class="btn btn--outline">View Live</a>
+            <a
+              href="https://gosia-hangman.netlify.app"
+              target="_blank"
+              class="btn btn--outline"
+              >View Live</a
+            >
           </div>
-
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="section-inner">
-        <p class="section-label">Contact</p>
-        <form class="contact__form" netlify name="contact" method="POST">
-          <input type="hidden" name="form-name" value="contact" />
-          <div class="contact__row">
-            <div class="contact__field">
-              <label for="firstName">First name</label>
-              <input type="text" id="firstName" name="firstName" required />
+        <div class="contact__layout">
+          <form class="contact__form" netlify name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="contact__row">
+              <div class="contact__field">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="contact__field">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
             </div>
             <div class="contact__field">
-              <label for="lastName">Last name</label>
-              <input type="text" id="lastName" name="lastName" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
             </div>
+            <div class="contact__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn contact__submit">
+              Send message
+            </button>
+          </form>
+          <div class="contact__right">
+            <div class="deco-title-wrap">
+              <h2 class="deco-title deco-title--outline deco-title--contact" aria-label="contact">contact</h2>
+              <h2 class="deco-title deco-title--fill deco-title--contact" aria-hidden="true">contact</h2>
+            </div>
+            <p class="contact__tagline">Based in Melbourne, open to remote work worldwide. Let's build something together.</p>
           </div>
-          <div class="contact__field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="contact__field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary contact__submit">Send message</button>
-        </form>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© 2026 Gosia Sinilo</p>
+      <div class="footer__brand">
+        <p>© 2026 Gosia Sinilo</p>
+      </div>
       <div class="footer__links">
-        <a href="https://github.com/gosiasinilo" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gosiasinilo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gosiasinilo" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/gosiasinilo/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
       </div>
     </footer>
   </body>
