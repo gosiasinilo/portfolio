@@ -846,3 +846,47 @@ body {
     text-align: center;
   }
 }
+
+/* ── SKILLS: certification ── */
+.skills__cert {
+  padding: 1.25rem 2rem 2rem;
+}
+
+.cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--border);
+  background: var(--white);
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.cert:hover {
+  border-color: var(--amber);
+  transform: translateY(-1px);
+}
+
+.cert__badge {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.cert__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cert__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cert__meta {
+  font-size: 0.75rem;
+  color: var(--grey-mid);
+}
